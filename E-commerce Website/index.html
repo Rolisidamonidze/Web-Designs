@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- link files -->
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <!--link files end -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header flex">
+        <div class="logo"><h5>Phoenix nav</h5></div>
+      <div class="navigation flex">
+        <div class="categories flex ">
+            <select id='myCategories'><h5>All Categories</h5>
+            </select>
+          <!-- <div class="flex arrows">
+            <div id="caret_up"><i class="fas fa-caret fa-caret-up"></i></div>
+            <div id="caret_down"><i class="fas fa-caret fa-caret-down"></i></div>
+          </div> -->
+        </div>
+        <span class="vl"></span>
+        <input id="filter" type="search" placeholder="Search over 10,000 products" class="search"></input>
+        <div  class="search_btn_div flex">
+          <a href=""><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+      <div class="menu flex">
+        <div class="dropdown flex">
+          <a type="button" class="dropdown flex" data-toggle="dropdown">
+            <h5>Main</h5>
+            <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown flex">
+          <a type="button" class="dropdown flex" data-toggle="dropdown">
+            <h5>Megamenu</h5>
+            <i class="fas fa-chevron-down"></i></a>
+          </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+          <a id="search_button" href="#"><i class="fas fa-search white"></i></a>
+          <div class="dropdown">
+            <a data-toggle="dropdown" href="#"><i class="far fa-heart white"></i></a>
+            <div class="dropdown-menu" id="favorites">Favourites</div>
+          </div>
+          <div class="dropdown">
+            <a data-toggle="dropdown" href="#"><i class="fas fa-shopping-cart white"></i></a>
+            <div class="dropdown-menu" id="shop_cart">Shopping Cart</div>
+          </div>
+          <div class="dropdown">
+            <a data-toggle="dropdown" href="#"><i class="far fa-user white"></i></a>
+            <div class="dropdown-menu" id="profile">Profile</div>
+          </div>
+      </div>
+    </div>
+    <!-- header end -->
+    <!-- products -->
+    <div class="product flex">
+      <h4>Featured Products</h4>
+      <hr class="newhr">
+      <div class="btn-group product_filter flex">
+          <button type="button" class="btn">All</button>
+          <button type="button" class="btn">Power Tools</button>
+          <button type="button" class="btn">Hand Tools</button>
+          <button type="button" class="btn">Plumbing</button>
+          <div class="chevron"><i class="fas fa-chevron-left"></i></div>
+          <div class="chevron"><i class="fas fa-chevron-right"></i></div>
+      </div>
+    </div>
+    <div id="results" class="items flex">
+      <div  class="full_block results">
+        <div class="item_block flex new"><h2>700X700</h2></div>
+        <h6>Item 1</h6>
+        <div class="stars flex">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <div class="reviews"><h6>2 Reviews</h6></div>
+        </div>
+        <div class="price"><h6>360$</h6></div>
+      </div>
+      <div class="full_block results">
+        <div class="item_block flex"><h2>700X700</h2></div>
+        <h6>Item 2</h6>
+        <div class="stars flex">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star grey_star"></i>
+          <i class="fas fa-star grey_star"></i>
+          <div class="reviews"><h6>9 Reviews</h6></div>
+        </div>
+        <div class="price"><h6>60$</h6></div>
+      </div>
+      <div class="full_block">
+        <div class="item_block flex"><h2>700X700</h2></div>
+        <h6>Item 3</h6>
+        <div class="stars flex">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star grey_star"></i>
+          <div class="reviews"><h6>9 Reviews</h6></div>
+        </div>
+        <div class="price"><h6>100$</h6></div>
+      </div>
+      <div class="full_block">
+        <div class="item_block flex"><h2>700X700</h2></div>
+        <h6>Item 4</h6>
+        <div class="stars flex">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star grey_star"></i>
+          <i class="fas fa-star grey_star"></i>
+          <div class="reviews"><h6>9 Reviews</h6></div>
+        </div>
+        <div class="price"><h6>300$</h6></div>
+      </div>
+      <div class="full_block">
+        <div class="item_block flex"><h2>700X700</h2></div>
+        <h6>Item 5</h6>
+        <div class="stars flex">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <div class="reviews"><h6>9 Reviews</h6></div>
+        </div>
+        <div class="price"><h6>50$</h6></div>
+      </div>
+      <div class="full_block">
+        <div class="item_block flex hot"><h2>700X700</h2></div>
+        <h6>Item 6</h6>
+        <div class="stars flex">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <div class="reviews"><h6>9 Reviews</h6></div>
+        </div>
+        <div class="price"><h6>300$</h6></div>
+      </div>
+      <div class="full_block">
+        <div class="item_block flex sale"><h2>700X700</h2></div>
+        <h6>Item 7</h6>
+        <div class="stars flex">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <div class="reviews"><h6>9 Reviews</h6></div>
+        </div>
+        <div class="price"><h6>320$</h6></div>
+      </div>
+      <div class="full_block">
+        <div class="item_block flex"><h2>700X700</h2></div>
+        <h6>Item 8</h6>
+        <div class="stars flex">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star grey_star"></i>
+          <div class="reviews"><h6>9 Reviews</h6></div>
+        </div>
+        <div class="price"><h6>300$</h6></div>
+      </div>
+      <div class="full_block">
+        <div class="item_block flex"><h2>700X700</h2></div>
+        <h6>Item 9</h6>
+        <div class="stars flex">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star grey_star"></i>
+          <i class="fas fa-star grey_star"></i>
+          <i class="fas fa-star grey_star"></i>
+          <div class="reviews"><h6>9 Reviews</h6></div>
+        </div>
+        <div class="price"><h6>350$</h6></div>
+      </div>
+      <div class="full_block">
+        <div class="item_block flex"><h2>700X700</h2></div>
+        <h6>Item 10</h6>
+        <div class="stars flex">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <div class="reviews"><h6>9 Reviews</h6></div>
+        </div>
+        <div class="price"><h6>100$</h6></div>
+      </div>
+    </div>
+    <button class="rounded-circle" onclick="topFunction()" id="scrollBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- products end -->
+    <!-- script files -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="all.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
